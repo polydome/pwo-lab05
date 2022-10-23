@@ -10,7 +10,7 @@ public class SeqToOutApp extends SeqToFileApp {
     }
 
     @Override
-    protected boolean wirteSeq() {
+    protected boolean writeSeq() {
         System.out.println(SequenceTools.getTermsAsColumn(
                 seqType.getGenerator(), from, to));
         return true;
@@ -24,6 +24,6 @@ public class SeqToOutApp extends SeqToFileApp {
                     + "Legal usage: seqName from to");
             return;
         }
-        wirteSeq();
+        writeSeq();
     }
 }
